@@ -289,12 +289,43 @@ p {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  transition: background-color 5800ms linear, transform 6000ms linear;
+
+
+  animation: changeBgColor 10000ms infinite 10000ms;
 }
+
+
+
 .btn-hero:hover,
 .btn-hero:focus {
   background-color: var(--ocean);
+ 
 }
+@keyframes changeBgColor {
+  0% {
+    transform: translateX(0%);
+    background-color: rgb(4, 88, 88);
+  }
+  25% {
+    transform: translateX(-100%);
+    background-color: rgb(18, 8, 107);
+  }
+50% {
+    transform: 
+    translateX(0%);
+  }
+  75% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
 
+    background-color: var(--ocean);
+  }
+
+}
 /**
   |============================
   | Section 1 advantages
