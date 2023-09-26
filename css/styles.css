@@ -291,7 +291,7 @@ p {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   transition: background-color 10ms linear, transform 10ms linear;
-transition-delay: 10ms;
+  transition-delay: 10ms;
 
   animation: changeBgColor 10000ms infinite 300ms;
   transition-delay: 10ms;
@@ -305,6 +305,8 @@ transition-delay: 10ms;
   background-color: var(--ocean);
  
 }
+
+
 @keyframes changeBgColor {
   0% {
     transform: translateX(0%);
@@ -312,29 +314,29 @@ transition-delay: 10ms;
 
     transform: scale(1.25);
   }
+
   25% {
     transform: translateX(-100%);
     background-color: rgb(18, 8, 107);
   }
+
 50% {
     transform: 
     translateX(0%);
     transform: scale(1.25);
   }
+
   75% {
     transform: translateX(100%);
   }
+
   100% {
     transform: translateX(0%);
 
     background-color: var(--ocean);
 
     transform: scale(1.25);
-
   }
-
-  transition-delay: 10ms;
-
 }
 /**
   |============================
